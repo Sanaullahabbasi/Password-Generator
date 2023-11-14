@@ -4,7 +4,10 @@ var num = "1234567890";
 var capAlp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var smAlp = "abcdefghijklmnopqrstuvwxyz";
 var spChr = "@!#$%&*_?";
-var newPass = "";
+var newNumPass = "";
+var newCapPass = "";
+var newSmPass = "";
+var newSplPass = "";
 
 // console.log("Capital Alphabats==>", capAlp.length, )
 // console.log("Small Alphabats==>", smAlp.length, )
@@ -14,19 +17,41 @@ var newPass = "";
 for (var i = 0; i < num.length; i++) {
   // newPass = '';
   var randNum = Math.floor(Math.random() * 10);
-  newPass += num[randNum];
-  if (newPass.length == 1 || newPass.length <= 2) {
-    console.log("number", newPass);
+  newNumPass += num[randNum];
+  if (newNumPass.length == 1 || newNumPass.length <= 2) {
+    console.log("number", newNumPass);
   }
 }
+
 for (var i = 0; i < capAlp.length; i++) {
   // newPass = '';
   var randCapAl = Math.floor(Math.random() * 26);
-  newPass += capAlp[randCapAl];
-  if (newPass.length == 1) {
-    console.log("capital alphabats", newPass);
+  newCapPass += capAlp[randCapAl];
+  if (newCapPass.length == 1) {
+    console.log("capital alphabats", newCapPass);
   }
 }
+for (var i = 0; i < smAlp.length; i++) {
+  // newPass = '';
+  var randSmAl = Math.floor(Math.random() * 26);
+  newSmPass += smAlp[randSmAl];
+  if (newSmPass.length > 6 && newSmPass.length <= 8) {
+    console.log("small alphabats", newSmPass);
+  }
+}
+
+for (var i = 0; i < spChr.length; i++) {
+  // newPass = '';
+  var randSplChr = Math.floor(Math.random() * 10);
+  newSplPass += spChr[randSplChr];
+  if (newSplPass.length === 1 ) {
+    console.log("number", newSplPass);
+  }
+}
+
+var randomPass;
+randomPass = newNumPass + newCapPass + newSmPass + newSplPass;
+console.log(randomPass);
 
 // function generate(){
 //   newPass = '';
