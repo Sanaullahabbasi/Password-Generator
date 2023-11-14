@@ -56,12 +56,12 @@ function generate() {
   if (regex.test(genRanPas)) {
     document.getElementById("Password").value = genRanPas;
     main.innerHTML = `
-      <p>Stong</p>
+      <p style="color:green">Stong</p>
       `;
   } else {
     document.getElementById("Password").value = genRanPas;
     main.innerHTML = `
-        <p>Weak</p>
+        <p style="color:red" >Weak</p>
         `;
   }
 }
