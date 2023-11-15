@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "CormorantGaramond";
+    src: url(font/CormorantGaramond-SemiBold.ttf);
+}
+
 body {
   display: flex;
   align-items: center;
@@ -7,8 +12,9 @@ body {
 }
 .container h1 {
   text-transform: uppercase;
-  text-shadow: 3px 2px 2px rgb(96, 94, 94);
-  color: indigo;
+  text-shadow: 1px 1px 5px rgb(96, 94, 94);
+  color: rgb(31, 3, 52);
+  font-family: "CormorantGaramond";
 }
 
 #Password {
@@ -46,7 +52,7 @@ body {
   width: 600px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 #main p{
     font-size: 20px;
@@ -55,4 +61,18 @@ body {
 text-align: center;
 font-size: 18px;
 font-weight: bold;
+}
+.sub-cont{
+    width: 95%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.logo img{
+    padding-right: 80px;
+    height: 274px;
+    width: 450px;
 }
