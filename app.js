@@ -14,27 +14,27 @@ function generate() {
   var newSplPass = "";
   var randomPass = "";
 
-  // =====**** loop run to get random number ****==== 
+  // =====**** loop run to get random number ****====
 
   for (var i = 0; i < num.length; i++) {
     var randNum = Math.floor(Math.random() * 10);
     newNumPass += num[randNum];
   }
 
-    // =====**** loop run to get random Captial Alphabets ****==== 
+  // =====**** loop run to get random Captial Alphabets ****====
 
-    for (var i = 0; i < capAlp.length; i++) {
-      var randCapAl = Math.floor(Math.random() * 26);
-      newCapPass += capAlp[randCapAl];
-    }
-    
-    // =====**** loop run to get random Small Alphabets ****====
+  for (var i = 0; i < capAlp.length; i++) {
+    var randCapAl = Math.floor(Math.random() * 26);
+    newCapPass += capAlp[randCapAl];
+  }
+
+  // =====**** loop run to get random Small Alphabets ****====
 
   for (var i = 0; i < smAlp.length; i++) {
     var randSmAl = Math.floor(Math.random() * 26);
     newSmPass += smAlp[randSmAl];
   }
-    // =====**** loop run to get random Special Characters ****====
+  // =====**** loop run to get random Special Characters ****====
 
   for (var i = 0; i < spChr.length; i++) {
     var randSplChr = Math.floor(Math.random() * 9);
@@ -48,20 +48,27 @@ function generate() {
     randomPass.slice(1, 2) +
     randomPass.slice(62, 63);
 
-    // =====**** Regex added to check validation  ****====
-
+  // =====**** Regex added to check validation  ****====
 
   var regex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{11,11}$/;
   if (regex.test(genRanPas)) {
     document.getElementById("Password").value = genRanPas;
     main.innerHTML = `
-      <p style="color:green; text-align: right">* Stong</p>
+      <p style="color:green; text-align: right">* Stong Password</p>
       `;
   } else {
     document.getElementById("Password").value = genRanPas;
     main.innerHTML = `
-        <p style="color:red; text-align: right" >* Weak</p>
+        <p style="color:red; text-align: right" >* Weak Password</p>
         `;
   }
 }
+
+function copy() {
+  input = document.getElementById("Password");
+  input.select();
+  document.execCommand("copy")  
+}
+
+

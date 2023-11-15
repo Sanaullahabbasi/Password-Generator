@@ -27,10 +27,19 @@
           id="Password"
           placeholder="Password Generator"
         />
+              <label for=""><i id="past" class="fa-regular fa-copy" style="display: none"></i></label>
+        <label for=""><i class="fa-regular fa-clipboard" title="copy" onclick="copy()"></i></label>
         <label for=""
-          ><i class="fa-solid fa-repeat" onclick="generate()"></i
+          ><i class="fa-solid fa-repeat" onclick="generate()" title="generate"></i
         ></label>
         <div id="main"></div>
+        <div class="inst">
+          <ul>
+            <li>The length of password is <b>11</b></li>
+            <li>First letter is always <b>Captial</b></li>
+            <li>Each Password must contain a number with special character</li>
+          </ul>
+        </div>
       </div>
       <div class="logo">
         <img src="images/logo.png" alt="" />
