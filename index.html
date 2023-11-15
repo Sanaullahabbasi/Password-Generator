@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -27,10 +27,23 @@
           id="Password"
           placeholder="Password Generator"
         />
-              <label for=""><i id="past" class="fa-regular fa-copy" style="display: none"></i></label>
-        <label for=""><i class="fa-regular fa-clipboard" title="copy" onclick="copy()"></i></label>
         <label for=""
-          ><i class="fa-solid fa-repeat" onclick="generate()" title="generate"></i
+          ><i id="past" class="fa-regular fa-copy" style="display: none"></i
+        ></label>
+        <label for=""
+          ><i
+            class="fa-regular fa-clipboard"
+            id="copy"
+            title="copy"
+            onclick="copy()"
+          ></i
+        ></label>
+        <label for=""
+          ><i
+            class="fa-solid fa-repeat"
+            onclick="generate()"
+            title="generate"
+          ></i
         ></label>
         <div id="main"></div>
         <div class="inst">
