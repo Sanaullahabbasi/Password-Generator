@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "CormorantGaramond";
-    src: url(font/CormorantGaramond-SemiBold.ttf);
+  font-family: "CormorantGaramond";
+  src: url(font/CormorantGaramond-SemiBold.ttf);
 }
 
 body {
@@ -15,20 +15,23 @@ body {
   text-shadow: 1px 1px 5px rgb(96, 94, 94);
   color: rgb(31, 3, 52);
   font-family: "CormorantGaramond";
+  margin-bottom: 60px;
+  font-size: 45px;
 }
 
 #Password {
-  width: 610px;
+  width: 560px;
   padding: 6px 12px;
-  background: rgb(31, 32, 35);
-  border: 1px solid rgb(60, 63, 68);
+  background: rgb(3, 25, 92);
+  border: 1px solid rgb(72, 101, 147);
   border-radius: 10px;
   font-size: 33px;
   color: rgb(247, 248, 248);
   height: 80px;
   appearance: none;
   transition: border 0.15s ease 0s;
-  margin-top: 50px;
+  margin: 0px 11px;
+  margin-top: 10px;
 }
 #Password:focus {
   outline: none;
@@ -38,41 +41,50 @@ body {
 
 .text_div {
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
 }
 .fa-repeat {
   position: absolute;
   font-size: 45px;
-  right: 10px;
-  top: 73px;
+  right: 15px;
+  top: 120px;
   color: white;
   cursor: pointer;
 }
 
 #main {
-  width: 600px;
+  width: 560px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-#main p{
-    font-size: 20px;
+#main p {
+  font-size: 20px;
 }
-.container h4{
-text-align: center;
-font-size: 18px;
-font-weight: bold;
+.text_div h4 {
+  text-align: center;
+  color: #344fbc;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 25px 10px;
 }
-.sub-cont{
-    width: 95%;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+.sub-cont {
+  width: 95%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
 }
 
-.logo img{
-    padding-right: 80px;
-    height: 274px;
-    width: 450px;
+.logo img {
+  padding-right: 80px;
+  height: 224px;
+  width: 450px;
 }
