@@ -2,12 +2,14 @@ var main = document.getElementById("main");
 var input = document.getElementById("Password").value;
 var copyIcon = document.getElementById("copy");
 var pastIcon = document.getElementById("past");
+var err = document.querySelector(".error")
 // var pass = "`1234567890-qertyuiiop!@*&*lkjhgfdsaAZXCVBNM,./ASDFGHJKLPOIUYTREWQzxcvbnm";
 var genRanPas;
 
 function generate() {
   copyIcon.style.display = "block";
   pastIcon.style.display = "none";
+  err.style.display = "none";
   var num = "1234567890";
   var capAlp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var smAlp = "abcdefghijklmnopqrstuvwxyz";
@@ -74,8 +76,14 @@ function copy() {
   pastIcon.style.display = "block";
   pastIcon.style.cursor = "not-allowed";
   input = document.getElementById("Password");
-  input.select();
-  document.execCommand("copy") ; 
+  if(input.value === ""){
+    err.innerHTML = `
+    <p>*this field id empty</p>
+    `
+  }else{
+    input.select();
+    document.execCommand("copy") ; 
+      }
 }
 
 

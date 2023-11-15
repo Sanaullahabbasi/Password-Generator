@@ -79,9 +79,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0px;
+  margin: 0px;
 }
 #main p {
   font-size: 20px;
+  margin: 0px;
 }
 .text_div h4 {
   text-align: center;
@@ -112,3 +115,13 @@ body {
   margin-top: 10px;
   color: #021048;
 }
+.error{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 20px;
+    margin: 0px;
+  }
+  .error p {
+    margin: 0px;
+    padding: 0px;
+  }
