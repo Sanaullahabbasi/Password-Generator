@@ -16,6 +16,7 @@
   <body>
     <div class="container">
       <h1>Random Password generator</h1>
+      <h4>Create strong and secure passwords to keep your account safe</h4>
     </div>
     <div class="text_div">
       <input
@@ -24,11 +25,11 @@
         id="Password"
         placeholder="Random Password generator"
       />
-      <i class="fa-solid fa-repeat"></i>
+      <label for=""><i class="fa-solid fa-repeat" onclick="generate()"></i></label>
     </div>
 
     <div id="main"></div>
-    <button id="generate" onclick="generate()">Password generator</button>
+    <!-- <button id="generate" >Password generator</button> -->
 
     <script src="app.js"></script>
   </body>
